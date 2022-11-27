@@ -1,0 +1,271 @@
+@font-face{
+	font-family: 'poppinsbold';
+	src: url('../fonts/poppinsbold.ttf');
+}@font-face{
+	font-family: 'brittanyfont';
+	src: url('../fonts/brittanyfont.ttf');
+}
+*{
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+	margin: 0;
+
+}
+html{
+	scroll-behavior: smooth;
+}
+.text-white{
+	color: white;
+}
+#view{
+	position: fixed;
+	color: black;
+	width: 200px;
+	z-index: 1;
+	padding: 20px 0;
+	text-align: center;
+	top: 0;
+	left: 0;
+}.position-relative{
+	position: relative;
+}.position-absolute{
+	position: absolute;
+}.fit{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	top: 0;
+	left: 0;
+}
+.poppinsbold{
+	font-family: poppinsbold, arial;
+}
+.brittanyfont{
+	font-family: brittanyfont, arial;
+}
+.beige{
+	background-color: #F9F3DE;
+	position: relative;
+}
+.sky{
+	background: linear-gradient(#7395B4, #5588B4);
+}
+.skysunset{
+	background: linear-gradient(#F6C47D, transparent);
+}
+.skybright{
+	background: #5ECBE1;
+}
+.bg-white-500{
+	background-color: rgba(255,255,255,.5);
+}
+.bg-dark-500{
+	background-color: rgba(0,0,0,.5);
+}
+.vheight{
+	height: 100vh;
+}
+.vheight-lg{
+	height: 140vh;
+}
+.vheight-md{
+	height: 120vh;
+}
+.hover{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.bgpaper{
+	background-image: url(../graphics/backgroundpaper.png);
+}
+.aes2{
+	background-image: url(../graphics/aes2.png);
+	background-repeat: no-repeat;
+	background-size: 125%;
+	background-position: center 350%;
+}
+.flower{
+	position: relative;
+	display: block;
+}
+.flower:before{
+	content: '';
+	position: absolute;
+	top: -250px;
+	left: -500px;
+	width: 600px;
+	height: 600px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../graphics/flower.png);
+	z-index: 0;
+}
+.leaves{
+	position: absolute;
+	bottom: 0;
+	width: 20%;
+	right: 0;
+}
+#petal{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 16%;
+}
+section{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	display: flex;
+	user-select: none;
+	justify-content: center;
+	align-items: center;
+}
+section *{
+	transition: 0ms;
+}
+.stars{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+#moonlighttext{
+	position: absolute;
+	left: 0;
+	top: 300px;
+	width: calc(50% - 65px);
+	white-space: nowrap;
+	text-align: right;
+}
+#moonlighttextright{
+	position: absolute;
+	right: 0;
+	top: 300px;
+	text-align: left;
+	width: calc(50% - 65px);
+	white-space: nowrap;
+}
+.moon{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 300px;
+	top: 200px;
+	margin: auto;
+	mix-blend-mode: screen;
+}
+.mountains_front{
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	bottom: 0px;
+}
+.mountains_behind{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.parallax{
+	background-color: #0B0017;
+}
+#night section:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	height: 100px;
+	width: 100%;
+	background: linear-gradient(transparent, #0B0017);
+}
+.plane{
+	position: relative;
+}
+.plane:after{
+	content: '';
+	position: absolute;
+	top: -150px;
+	right: -160px;
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../graphics/travel.png);
+	z-index: 0;
+}
+
+
+
+.scenery{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	overflow-y: hidden;
+}
+.scenery *{
+	position: absolute;
+}
+/*highlands*/
+#hillbehind{
+	bottom: -180px;
+	width: 100%;
+	left: 0;
+}
+#cloudblue{
+	bottom: -100px;
+	width: 40%;
+	right: 0;
+	opacity: .8;
+}
+#cloudblue2{
+	bottom: -100px;
+	width: 40%;
+	left: 0;
+	opacity: .8;
+}
+#sea{
+	bottom: 0px;
+	width: 100%;
+	left: 0;
+}
+#mountain{
+	bottom: -140px;
+	width: 36%;
+	right: 0;
+}
+#sun{
+	width: 0px;
+	height: 0px;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 0 80px 20px #fff;
+}
+#placetext{
+	position: absolute;
+	top: 0;
+	left: 50px;
+	font-size: 100px;
+	color: #fff;
+	text-shadow: 5px -5px 0 #FFFF64;
+}
+.text-justify{
+	text-align: justify;
+}
+
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.showcontent{
+	animation: fadein .5s linear;
+}
